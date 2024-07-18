@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/basic"
+
+    tools:context="com.example.asm_dam.Activity.TheLoaiDetailActivity">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="139dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/newbok1" />
+
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#005D33"
+        android:textSize="30sp"
+        android:text="UPDATE CATEGORY"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:layout_below="@+id/img"
+        android:shadowRadius="2"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Category ID: "
+        />
+    <EditText
+        android:id="@+id/edMatheloai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Category Name: "
+        />
+    <EditText
+        android:id="@+id/edTentheloai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Description: "
+        />
+    <EditText
+        android:id="@+id/edMota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Position: "
+        />
+    <EditText
+        android:id="@+id/edVitri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnUpda"
+            android:onClick="updateU"
+            android:text="UPDATE"
+            android:layout_width="120dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/duongvien_goctron"
+            android:textColor="#DACDBD"
+            android:backgroundTint="#6C644C"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+        <Button
+            android:id="@+id/btnCance"
+            android:onClick="Huy"
+            android:text="CANCEL"
+            android:layout_width="120dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/duongvien_goctron"
+            android:textColor="#DACDBD"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#6C644C"
+
+            />
+    </LinearLayout>
+</LinearLayout>

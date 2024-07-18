@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/me3"
+    tools:context="com.example.asm_dam.Activity.Login">
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="200dp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:text="Be All You Can Be "-->
+    <!--        android:textSize="27sp" />-->
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="139dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/newbok1"
+
+        />
+    <TextView
+
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#005D33"
+        android:textSize="40sp"
+
+        android:text="BookArt"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:layout_below="@+id/img"
+        android:shadowRadius="2"
+        android:textStyle="bold"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tx1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="User name"
+
+            android:textColor="#052C1A"
+            android:textColorHint="@android:color/background_light"
+            android:textColorLink="@android:color/background_light" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- Email Label -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tx3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email11"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:scrollbarThumbHorizontal="@android:color/background_light"
+            android:scrollbarThumbVertical="@android:color/background_light"
+            android:textColor="#052C1A" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tx2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password11"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:scrollbarThumbHorizontal="@android:color/background_light"
+            android:scrollbarThumbVertical="@android:color/background_light"
+            android:textColor="#052C1A" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx2"
+        android:layout_margin="23dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/duongvien_goctron"
+            android:text=" Registration "
+            android:textColor="#247936" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/link_login"
+                android:layout_width="150dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/duongvien_goctron"
+                android:text="Login"
+                android:textColor="#DACDBD"
+                android:backgroundTint="#6C644C"/>
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="150dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/duongvien_goctron"
+                android:text="     Cancel      "
+                android:textColor="#DACDBD"
+                android:backgroundTint="#6C644C"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="If you don't have an account "
+            android:textColor="#111111"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Please Registration and then Login to use my App "
+            android:textColor="#111111"
+            android:textColorHighlight="@color/design_default_color_primary"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

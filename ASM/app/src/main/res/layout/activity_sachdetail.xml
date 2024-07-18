@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/basic"
+
+    tools:context="com.example.asm_dam.Activity.SachDetailActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="139dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/newbok1"
+
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#005D33"
+        android:textSize="30sp"
+        android:text="UPDATE BOOK"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:layout_below="@+id/img"
+        android:shadowRadius="2"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Book ID:"
+        />
+    <EditText
+        android:id="@+id/edMaSachsua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Book ID" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        ></LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Book Name:"
+        />
+    <EditText
+        android:id="@+id/edTenSachsua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Book Name" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tác giả:"
+        />
+    <EditText
+        android:id="@+id/edTacGiasua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Author" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Publishing Company:"
+        />
+    <EditText
+        android:id="@+id/edNXBsua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Publishing company" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Price:"
+        />
+    <EditText
+        android:id="@+id/edGiaBiasua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Price" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Quality:"
+        />
+    <EditText
+        android:id="@+id/edSoLuongsua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Quality" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/btnUpdasua"
+            android:onClick="capsua"
+            android:text="Cập nhật"
+            android:layout_width="150dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/duongvien_goctron"
+            android:textColor="#DACDBD"
+            android:backgroundTint="#6C644C"
+            />
+        <Button
+            android:id="@+id/btnCancesua"
+            android:onClick="quaysua"
+            android:text="Quay lại"
+            android:layout_width="150dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/duongvien_goctron"
+            android:textColor="#DACDBD"
+            android:backgroundTint="#6C644C"
+            />
+    </LinearLayout>
+
+</LinearLayout>

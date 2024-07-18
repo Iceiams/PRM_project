@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    tools:context="com.example.asm_dam.Activity.TheLoaiActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="BookArt"
+        android:textColor="#005D33"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/edMa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID Category" />
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/edTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category Name" />
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/edVi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location" />
+
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/edMo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Detail" />
+
+    <LinearLayout
+        android:id="@+id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edSoLuongsua">
+
+        <Button
+            android:id="@+id/btnThem"
+            android:layout_width="165dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:background="#005D33"
+            android:onClick="themtheloai"
+            android:text="ADD"
+            android:textColor="#fff" />
+
+        <Button
+
+            android:id="@+id/btnHuy"
+            android:layout_width="165dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#005D33"
+            android:onClick="quaylai"
+            android:text="Cancel"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="23dp"
+        android:orientation="vertical"
+        android:layout_below="@id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnDanh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category List "
+            android:layout_marginTop="10dp"
+            android:onClick="showtheloai"
+            android:textColor="#247936" />
+
+    </LinearLayout>
+</LinearLayout>

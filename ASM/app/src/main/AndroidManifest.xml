@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.asm1_ps09755">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name="com.example.asm_dam.Activity.Chitiet"
+            android:label="@string/title_activity_chitiet" />
+        <activity
+            android:name="com.example.asm_dam.Activity.Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.asm_dam.Activity.Login" />
+        <activity android:name="com.example.asm_dam.Activity.Splash_Srceen_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.asm_dam.Activity.dangki"/>
+        <activity android:name="com.example.asm_dam.Activity.ChangePassActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name="com.example.asm_dam.Activity.ListNguoiDungActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name="com.example.asm_dam.Activity.ThemNguoiDungActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name="com.example.asm_dam.Activity.NguoiDungDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name="com.example.asm_dam.Activity.ListTheLoaiActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name="com.example.asm_dam.Activity.TheLoaiActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name="com.example.asm_dam.Activity.TheLoaiDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name="com.example.asm_dam.Activity.ListSachActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name="com.example.asm_dam.Activity.ThemSachActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name="com.example.asm_dam.Activity.SachDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            />
+        <activity android:name="com.example.asm_dam.Activity.ListHoaDonActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name="com.example.asm_dam.Activity.ThemHoaDonActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name="com.example.asm_dam.Activity.HoaDonDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name="com.example.asm_dam.Activity.HoaDonChiTietActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name="com.example.asm_dam.Activity.ListThongKeActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name="com.example.asm_dam.Activity.ListBanChayActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+    </application>
+
+</manifest>
